@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Resume</title>
   </head>
   <body>
+    <!-- Try displaying the PDF first -->
     <object data="./resume.pdf" type="application/pdf" width="100%" height="1000px">
-      <p>Unable to display the PDF file. <a href="https://raw.githubusercontent.com/oscpprep/resume/ce729e6182a673b23480a9a5e0fe84ccbeee9354/resume.pdf">Download</a> instead.</p>
+      <!-- If the PDF doesn't show, try displaying the contents of the README.md file -->
+      <pre id="readme-content"></pre>
+      <!-- If neither the PDF nor the README.md file can be displayed, provide the download link -->
+      <p>Unable to display the PDF or README file. <a href="https://raw.githubusercontent.com/oscpprep/resume/ce729e6182a673b23480a9a5e0fe84ccbeee9354/resume.pdf">Download Resume</a> instead.</p>
     </object>
+
+    <script>
+      // Fetch and display the contents of the README.md file if the PDF isn't available
+      fetch('./README.md')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('readme-content').textContent = data;
+        })
+        .catch(error => {
+          console.error('Error fetching README.md:', error);
+        });
+    </script>
   </body>
 </html>
