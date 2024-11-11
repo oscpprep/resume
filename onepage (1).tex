@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author: M.O. Haque
+% Based on Jake Gutierrez's Template: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% Uncomment the desired font option:
+% \usepackage[sfdefault]{FiraSans} % sans-serif
+% \usepackage[sfdefault]{roboto} % sans-serif
+% \usepackage[sfdefault]{noto-sans} % sans-serif
+% \usepackage[default]{sourcesanspro} % sans-serif
+% \usepackage{CormorantGaramond} % serif
+% \usepackage{charter} % serif
+
+% Page layout settings
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\small
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    {#1} % Removed \vspace here
+  }
+}
+
+\newenvironment{tightitemize}
+  {\begin{itemize}[left=0pt, label={}, itemsep=0pt, topsep=0pt, partopsep=0pt, parsep=0pt]}
+  {\end{itemize}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & {\small #2} \\
+      \textit{\footnotesize#3} & \textit{\footnotesize #4} \\
+    \end{tabular*}\vspace{-7pt} % Reduce spacing after the subheading
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\footnotesize#1} & \textit{\footnotesize #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \footnotesize#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+\newcommand{\resumeEducationEntry}[4]{
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\small #1} & \textit{\footnotesize #2} \\
+    \textit{\footnotesize#3} & \textit{\footnotesize #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape M.O. Haque} \\ \vspace{1pt}
+    \footnotesize QA Engineer | 5 Years+ Experience $|$ \href{mailto:Secure.at3137312055@gmail.com}{\underline{E-mail: Secure.at3137312055@gmail.com}} $|$ 
+    Phone: 313-731-2055 \\
+    US Citizen | Orlando, FL $|$ 
+    \href{https://www.LinkedIn.com/in/secure-at-whitehat}{\underline{LinkedIn: secure-at-whitehat}} $|$
+    \href{https://github.com/oscpprep}{\underline{GitHub: oscpprep.github.io / Global-Aid.github.io}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \resumeItem{I'm a QA Automation Engineer passionate about simplifying complex testing processes. I focus on developing and running automated tests to ensure software and systems function as intended. I enjoy exploring creative approaches to enhance testing and thrive in collaborative environments where we work together to solve challenges and build great products.}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Work History}
+  \resumeSubHeadingListStart
+\resumeSubheading
+  {Sineris}{March 2023 – Present, Orlando, FL}
+  {QA Automation Tester Consultant}{}
+  \resumeItemListStart
+  \resumeItem{Designed and implemented test plans, performing smoke and regression tests for CRM software.}
+  \resumeItem{Developed automated test scripts using WebdriverIO with Cucumber BDD and Selenium WebDriver.}
+  \resumeItem{Executed security, performance, and mobile compatibility tests; tested integrations with external systems.}
+  \resumeItem{Created and maintained feature files covering extensive UI elements, navigation, and workflows.}
+  \resumeItem{Collaborated with developers to identify and resolve issues, enhancing system stability and reliability.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {BA Soft Tech}{Dec 2023 – June 2024, Orlando, FL}
+  {QA Automation Engineer}{}
+  \resumeItemListStart
+  \resumeItem{Developed automated test scripts using Python, Selenium, and Capybara.}
+  \resumeItem{Conducted API testing for RESTful services and automated Android application testing with Espresso.}
+  \resumeItem{Created and maintained test scripts with WebdriverIO and Cucumber BDD; enhanced Cypress test automation.}
+  \resumeItem{Integrated test scripts with TestRail and built interactive consoles for WebdriverIO development.}
+  \resumeItem{Configured Jenkins for CI/CD, improving build and deployment efficiency by 30\%.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Quantum IT Services}{Feb 2021 – Dec 2023, New York, NY}
+  {Security Analyst Intern}{}
+  \resumeItemListStart
+  \resumeItem{Monitored and analyzed real-time alerts using SIEM tools; responded to security incidents and collaborated with incident response teams.}
+  \resumeItem{Managed and tuned security tools (antivirus, IDS/IPS, firewalls) to enhance threat detection and reduce false positives.}
+  \resumeItem{Conducted vulnerability assessments, prioritized patches, and integrated threat intelligence into daily operations.}
+  \resumeItem{Performed detailed analysis of security logs, leveraged forensics tools for incident investigations, and contributed to security awareness programs.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {IIE Inc}{Aug 2019 – Jun 2023, Elgin, IL}
+  {Network Security Engineer Intern}{}
+  \resumeItemListStart
+  \resumeItem{Utilized threat investigation frameworks and applied MITRE resources for Cyber Threat Intelligence.}
+  \resumeItem{Conducted threat analysis using Yara, OpenCTI, and managed the MISP Threat Sharing Platform.}
+  \resumeItem{Performed memory and disk forensics, executed malware analysis, and developed infrastructure hunting methodologies.}
+  \resumeItem{Engaged in threat emulation, phishing defense, and buffer overflow exploitation; proficient in real-time threat detection with Snort and Zeek.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education / Certification}
+  \resumeSubHeadingListStart
+    \resumeEducationEntry{Microsoft Administrative Associate}{2023 – 2024}{New Horizons of NE Florida, Jacksonville, FL USA}{}
+    \resumeEducationEntry{CompTIA Security+ CE Certification}{Issued Jul 2022 - Expires Jul 2025}{Credential ID: a9080fea-d1d4-4b12-b7ab-0e65488759be}{}
+    \resumeEducationEntry{Master of Arts/Science in Religious and Social Sciences}{2014 – 2020}{IIE.inc, Elgin, IL USA}{}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills \& Toolsets}
+\resumeSubHeadingListStart
+\resumeSubheading{QA Test Automation \& Development}{}{}{}
+\begin{tightitemize}
+  \resumeItem{Languages: Python (Selenium, Appium), JavaScript, Selenium, Ruby (Capybara)}
+  \resumeItem{Test Frameworks: WebDriverIO, Cypress, JUnit, BDD: Cucumber}
+  \resumeItem{Database: CRUD operations with SQL in MongoDB}
+  \resumeItem{Version Control: Git, GitHub, Bitbucket; CI/CD: Jenkins, GitLab CI/CD, CircleCI}
+  \resumeItem{Test Management: Jira, Azure Boards, TestRail, Tools: Docker, Postman, Allure, Selenium Grid, Sauce Labs}
+\end{tightitemize}
+
+\resumeSubheading{Penetration Testing \& Exploitation}{}{}{}
+\begin{tightitemize}
+  \resumeItem{Tools: Aircrack-ng, BeEF, Burp Suite, Hydra, John the Ripper, Metasploit, Sqlmap, Wireshark, Nikto, Nmap, Recon-ng, Gobuster}
+\end{tightitemize}
+
+\resumeSubheading{Cyber Defense}{}{}{}
+\begin{tightitemize}
+  \resumeItem{Endpoint Monitoring: Osquery, Wazuh; Firewalls: pfSense, FortiGate}
+  \resumeItem{Network Monitoring: Splunk, Zeek, Snort, ELK Stack; OSINT: SpiderFoot, Shodan, Google Dorks, Maltego}
+\end{tightitemize}
+
+\resumeSubheading{Threat Intelligence \& Incident Response}{}{}{}
+\begin{tightitemize}
+  \resumeItem{Threat Intel: MISP, OpenCTI, MITRE ATT\&CK, ThreatConnect; Incident Response: Cyber Kill Chain, Pyramid of Pain, Unified Kill Chain, NIST}
+  \resumeItem{Forensics: Memory leaks, Disk (Autopsy, FTK Imager); Malware Analysis: Yara}
+\end{tightitemize}
+
+\resumeSubHeadingListEnd
+
+\end{document}
